@@ -1,0 +1,13 @@
+BARBER HOUSE - DATOS DE ACCESO PARA DEMOSTRACIÓN
+=================================================
+
+ENCARGADO
+Usuario: encargado
+Contraseña: 123456
+
+RECEPCIÓN
+Usuario: recepcion
+Contraseña: 123456
+
+Estas cuentas se crean al importar database/barber_house.sql.
+Son credenciales de demostración para el proyecto académico.

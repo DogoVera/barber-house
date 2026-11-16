@@ -1,0 +1,18 @@
+<?php /** Vista de error de BD invocada por CI3; $message contiene HTML preparado por el framework. */ ?>
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Error de base de datos</title>
+</head>
+<body style="font-family:Segoe UI,Arial;background:#171614;color:#eee;padding:40px">
+    <div style="max-width:800px;margin:auto;background:#23211f;padding:24px;border-radius:16px">
+        <h1>No se pudo acceder a la base de datos</h1>
+        <p>Revisá XAMPP, la base <b>barber_house</b> y application/config/database.php.</p>
+        <!-- El diagnóstico detallado se muestra solo en desarrollo -->
+        <?php if (ENVIRONMENT === 'development'): ?>
+            <?= $message ?>
+        <?php endif; ?>
+    </div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<?php /** Diagnóstico PHP de CI3: recibe severidad, mensaje, archivo y línea; solo se presenta en desarrollo. */ ?>
+<?php if (ENVIRONMENT === 'development'): ?>
+    <div style="font-family:monospace;background:#4a2727;color:#fff;padding:10px;margin:10px">PHP <?= html_escape($severity) ?>: <?= html_escape($message) ?> en <?= html_escape($filepath) ?> línea <?= (int) $line ?></div>
+<?php endif; ?>
