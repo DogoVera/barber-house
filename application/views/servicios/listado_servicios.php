@@ -25,14 +25,15 @@
     <div class="tablewrap">
         <table>
             <thead>
-                <tr><th>Servicio</th><th>Precio</th><th>Duración</th><th>Estado</th><th>Acciones</th></tr>
+                <tr><th>ID</th><th>Servicio</th><th>Precio</th><th>Duración</th><th>Estado</th><th>Acciones</th></tr>
             </thead>
             <tbody>
                 <?php if (!$services): ?>
-                    <tr><td colspan="5" class="empty">No se encontraron servicios.</td></tr>
+                    <tr><td colspan="6" class="empty">No se encontraron servicios.</td></tr>
                 <?php endif; ?>
                 <?php foreach ($services as $service): ?>
                     <tr>
+                        <td><?= (int) $service['id'] ?></td>
                         <td><strong><?= h($service['name']) ?></strong></td>
                         <td><?= money($service['price']) ?></td>
                         <td><?= (int) $service['duration_minutes'] ?> min</td>
